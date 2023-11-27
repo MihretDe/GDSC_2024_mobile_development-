@@ -1,43 +1,43 @@
-void main(){
-  var nums=[1,8,3,3,4,45,5,69,10,39,91,10];
+void main() {
+  var nums = [1, 8, 3, 3, 4, 45, 5, 69, 10, 39, 91, 10];
 
-  int maximum(){
-    int max=nums[0];
-    for(var num in nums){
-      if(num>max){
-        max=num;
+  int maximum(List<int> numbers) {
+    int max = numbers[0];
+    for (var num in numbers) {
+      if (num > max) {
+        max = num;
       }
     }
     return max;
   }
 
-  int minimum(){
-    int min=nums[0];
-    for(var num in nums){
-      if(num<min){
-        min=num;
+  int minimum(List<int> numbers) {
+    int min = numbers[0];
+    for (var num in numbers) {
+      if (num < min) {
+        min = num;
       }
     }
     return min;
   }
 
-  int sum(){
-    int sum=0;
-    for(var num in nums){
-      sum+=num;
+  int sum(List<int> numbers) {
+    int sum = 0;
+    for (var num in numbers) {
+      sum += num;
     }
     return sum;
   }
 
-  double avg(){
-    double sum=0;
-    for(var num in nums){
-      sum+=num;
+  double avg(List<int> numbers) {
+    double sum = 0;
+    for (var num in numbers) {
+      sum += num;
     }
-    return sum/nums.length;
+    return sum / numbers.length;
   }
-  print('Maximum: ${maximum()}');
-  print('Minimum: ${minimum()}');
-  print('Sum: ${sum()}');
-  print('Average: ${avg()}');
+  print('Maximum: ${maximum(nums)}');
+  print('Minimum: ${minimum(nums)}');
+  print('Sum: ${sum(nums)}');
+  print('Average: ${avg(nums)}');
 }
