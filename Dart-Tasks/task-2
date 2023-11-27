@@ -1,1 +1,43 @@
+void main(){
+  var nums=[1,8,3,3,4,45,5,69,10,39,91,10];
 
+  int maximum(){
+    int max=nums[0];
+    for(var num in nums){
+      if(num>max){
+        max=num;
+      }
+    }
+    return max;
+  }
+
+  int minimum(){
+    int min=nums[0];
+    for(var num in nums){
+      if(num<min){
+        min=num;
+      }
+    }
+    return min;
+  }
+
+  int sum(){
+    int sum=0;
+    for(var num in nums){
+      sum+=num;
+    }
+    return sum;
+  }
+
+  double avg(){
+    double sum=0;
+    for(var num in nums){
+      sum+=num;
+    }
+    return sum/nums.length;
+  }
+  print('Maximum: ${maximum()}');
+  print('Minimum: ${minimum()}');
+  print('Sum: ${sum()}');
+  print('Average: ${avg()}');
+}
